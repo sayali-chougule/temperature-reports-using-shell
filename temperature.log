@@ -1,0 +1,7 @@
+#! /bin/bash
+# Extract reading with get_temp_api
+# Append reading to temperature.log
+# get_temp_api >> temperature.log
+
+# Buffer last hour of reading
+tail -60 temperature.log > temperature.log
